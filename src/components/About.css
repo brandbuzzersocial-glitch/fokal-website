@@ -1,0 +1,113 @@
+.about-section {
+    background: radial-gradient(circle at top right, #1e293b 0%, var(--color-bg-dark) 40%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.badge-glow {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--color-accent);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.1);
+}
+
+.about-text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.about-text strong {
+    color: var(--color-text-main);
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-text-main);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.about-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.visual-card-glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    position: relative;
+}
+
+.visual-card-glass::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--color-accent), transparent, var(--color-primary));
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0.3;
+}
+
+.award-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.5));
+}

@@ -1,0 +1,56 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+    padding: 1rem 0;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--color-text-main);
+}
+
+.logo-accent {
+    color: var(--color-accent);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-text-main);
+}
+
+.nav-links .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
