@@ -1,27 +1,31 @@
 import './Hero.css';
-import heroBg from '../assets/hero-bg.png';
+/* Helper for AOS if not global */
 
-export default function Hero() {
+const Hero = () => {
     return (
-        <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
+        <section className="hero-section">
+            <div className="hero-background"></div>
             <div className="hero-overlay"></div>
-            <div className="container hero-content">
-                <div className="hero-text-wrapper">
-                    <span className="hero-label">EST. 1984 &mdash; MITHABHI LAMPS PVT. LTD.</span>
+            <div className="container" data-aos="fade-up">
+                <div className="hero-content">
+                    <span className="hero-label">WELCOME TO FOKAL</span>
                     <h1 className="hero-title">
-                        Illuminating <br />
-                        <span className="text-gradient">Critical Missions</span>
+                        40 Years of Precision<br />Engineering Excellence
                     </h1>
-                    <p className="hero-subtitle">
-                        Premier high-precision lighting solutions for Defense, Aerospace, and Railway sectors.
-                        Indigenously designed for extreme reliability.
-                    </p>
+                    <div className="hero-text-wrapper">
+                        <p className="hero-description">
+                            National Award-winning manufacturer of mission-critical lighting
+                            solutions for defense, aerospace, and railway sectors.
+                        </p>
+                    </div>
                     <div className="hero-actions">
                         <a href="#products" className="btn btn-primary">Explore Products</a>
-                        <a href="#about" className="btn btn-outline">Our Legacy</a>
+                        <a href="#about" className="btn btn-outline">Download Catalog</a>
                     </div>
                 </div>
             </div>
         </section>
     );
-}
+};
+
+export default Hero;
