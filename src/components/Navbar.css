@@ -10,9 +10,10 @@
 
 .navbar.scrolled {
     padding: 1rem 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: #111111;
+    /* Solid Dark Header for contrast with Light Page */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-content {
@@ -47,7 +48,8 @@
 }
 
 .nav-links a:hover {
-    color: var(--color-text-main);
+    color: var(--color-primary);
+    /* Red hover */
 }
 
 .nav-links .btn {

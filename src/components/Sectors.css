@@ -1,7 +1,9 @@
 .sectors-section {
-    background: var(--color-bg-dark);
+    background: #FFFFFF;
     position: relative;
     z-index: 10;
+    padding-bottom: 2rem;
+    /* Add breathing room */
 }
 
 .section-title {
