@@ -1,5 +1,5 @@
 .about-section {
-    background: radial-gradient(circle at top right, #1e293b 0%, var(--color-bg-dark) 40%);
+    background: radial-gradient(circle at top right, #171717 0%, var(--color-bg-dark) 40%);
     position: relative;
     overflow: hidden;
 }
@@ -20,14 +20,14 @@
 .badge-glow {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(245, 158, 11, 0.1);
+    background: rgba(220, 38, 38, 0.1);
     color: var(--color-accent);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    border: 1px solid rgba(220, 38, 38, 0.3);
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 15px rgba(245, 158, 11, 0.1);
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.1);
 }
 
 .about-text {
@@ -109,5 +109,5 @@
 .award-icon {
     font-size: 4rem;
     margin-bottom: 1.5rem;
-    filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.5));
+    filter: drop-shadow(0 0 20px rgba(220, 38, 38, 0.5));
 }
